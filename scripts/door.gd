@@ -25,6 +25,6 @@ func open_door():
 
 func _on_body_entered(_body: Node2D) -> void:
 	if is_door_open:
-		Globals.go_to_next_level()
+		Globals.call_deferred("go_to_next_level")
 	else:
 		print("get the key to open the door")

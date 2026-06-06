@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cs5ujllhhre6d" path="res://objects/floor.tscn" id="3_ep78u"]
 [ext_resource type="PackedScene" uid="uid://ddbbu1yyodct7" path="res://objects/player.tscn" id="4_dfjjl"]
 [ext_resource type="PackedScene" uid="uid://oiu0ijwbwlfm" path="res://objects/idol.tscn" id="5_at1ld"]
+[ext_resource type="Texture2D" uid="uid://dyougtd1sww35" path="res://art/background 2.png" id="6_ilhis"]
 
 [node name="level 2" type="Node2D" unique_id=704510939]
 
@@ -21,3 +22,9 @@ position = Vector2(241, 389)
 
 [node name="idol" parent="." unique_id=289983958 instance=ExtResource("5_at1ld")]
 position = Vector2(510, 281)
+
+[node name="background" type="Sprite2D" parent="." unique_id=761839813]
+z_index = -2
+position = Vector2(624.7356, 379.75)
+scale = Vector2(1.8924794, 1.8924794)
+texture = ExtResource("6_ilhis")
